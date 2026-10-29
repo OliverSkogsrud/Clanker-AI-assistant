@@ -1,0 +1,17 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "Minimal Electron starter app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@openrouter/sdk": "^1.5.16",
+    "electron": "^45.1.0",
+    "openai": "^7.45.1"
+  },
+  "allowScripts": {
+    "@openrouter/sdk@1.5.16": true
+  }
+}

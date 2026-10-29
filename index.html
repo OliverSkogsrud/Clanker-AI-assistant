@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Clanker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <aside class="sidebar">
+      <h1>Model: </h1>
+      <select name="SelectModel" id="modelDropdown">
+        <option value="nvidia/nemotron-3.5-lightning:free" selected>Nemotron 3.5 Lightning</option>
+        <option value="nvidia/nemotron-3.5-super-vl:free">Nemotron 3.5 Super</option>
+        <option value="nvidia/nemotron-3-ultra-550b-a55b:free">Nemotron 3 ultra</option>
+        <option value="cohere/north-mini-code:free">Cohere north mini</option>
+      </select>
+      <h2 class="ChatLabel">Chat:  </h2>
+      <div class="Chats">
+
+         <button class="NewChat">New Chat</button>
+
+      </div>
+    </aside>
+
+
+    <div class="newChatPopup">
+      <h1>Create new chat</h1>
+    
+      <input type="text" name="NameNewChat" placeholder="Write name for your new chat!" class="NewChatInput">
+      <button class="NewChatSubmit">&#10140</button>
+    </div>
+
+    
+    <main>
+
+      <div class="ChatArea">
+
+        <div class="answerArea"></div>
+
+        <div class="inputArea">
+          <input type="text" name="sendMessage" placeholder="Write your message!" class="textbox">
+          <button class="SendButton">Send</button>
+        </div>
+        
+        <!--<Textarea name="sendMessage" rows="4" cols="50" placeholder="Write your message!" class="textbox"></Textarea>-->  
+      </div>
+
+
+
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>
