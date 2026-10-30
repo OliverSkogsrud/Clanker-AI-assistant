@@ -70,8 +70,10 @@ ipcMain.handle('model:set', async (event, modelKey) => {
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 1000,
-    height: 800,
+    width: 1200,
+    height: 1000,
+    minHeight: 600,
+    minWidth: 800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
